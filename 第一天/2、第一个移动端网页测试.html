@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width,user-scalable=no,initial-scala=1.0,maximum-scala=1.0,minimum-scala=1.0">
+    <!--
+       viewport:视口
+       width=device-width--》所访问的设备宽度；
+
+        //防止用户放大缩小；
+         user-scalable=no---》禁止用户缩放
+        initial-scala=1.0--》初始比例
+        minimum-scala=1.0--》最小比例
+        maximum-scala=1.0--》最大比例
+
+        //控制像素比
+
+
+    -->
+    <style>
+        div {
+            width: 400px;
+            border: 1px solid red;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<!--
+    写移动端最基本的需求
+    1、让页面宽度和设备宽度一样
+    2、禁止用户进行页面缩放；
+    3、我还想控制像素比，让1像素显示1像素的内容
+        1）1：1像素还原
+        2）尽可能和屏幕分辨率一样
+         //动态设置像素比
+    var pixelRatio=1/window.devicePixelRatio;
+    document.write('<meta name="viewport" content="width=device-width        ,user-scalable=no,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />')
+
+
+-->
+</body>
+</html>
