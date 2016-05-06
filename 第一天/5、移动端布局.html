@@ -3,6 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <title>移动端布局</title>
+    <script src="../public/布局.js"></script>
+
+
+    <style>
+
+        /*
+            解决定位问题
+            1、默认定位 相对于document；
+            2、我们给html{width：100% height：100%； overflow：hide}  这样会丢失滚动条
+            3、所以我们给body{width：100% height：100%； overflow：auto}
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+
+        }
+        .headBox{
+            position: absolute;/* 相对于document */
+            top: 0;
+            left: 0;
+            width:100%;
+            height: 4.475rem;
+            background: red;
+        }
+        .list{
+            margin-top: 4.475rem;
+            width: 100%;
+
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .list li{
+            box-sizing: border-box;
+            list-style: none;
+            float: left;
+            height: 12.5rem;
+            width: 7.5rem;
+            margin: 0.25rem;
+            border: 1px solid #cccccc;
+        }
+
+
+    </style>
 </head>
 <body>
     <!--
@@ -11,4 +67,16 @@
         2、搭建大体框架；
     -->
 </body>
+<header class="headBox">
+    <div id="top"></div>
+    <div id="bottom"></div>
+</header>
+<ul class="list clearfix" >
+    <li>111111</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
 </html>
