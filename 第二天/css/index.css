@@ -1,0 +1,139 @@
+/* reset */
+body,
+div,
+ul,
+li,
+h3,
+section {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial,Helvetica,STHeiTi,sans-serif";
+}
+li {
+  list-style: none ;
+}
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  -webkit-appearance: none;
+}
+a {
+  color: #aaaaa8;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+/* less */
+/* 工具样式 */
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+/* main */
+html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+}
+.head_box {
+  position: absolute;
+  width: 100%;
+  height: 1.875rem;
+  background: #fabc09;
+}
+.head_box .btn_type {
+  float: left;
+  width: 1.95rem;
+  height: 1.875rem;
+  background: url("../img/btn.type.png") no-repeat 0.5rem 0.2rem;
+  background-size: 0.95rem 1.5rem;
+}
+.head_box .search {
+  margin-top: 0.25rem;
+  width: 12.05rem;
+  height: 1.875rem;
+  float: left;
+  position: relative;
+}
+.head_box .search:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.45rem;
+  width: 0.525rem;
+  height: 0.575rem;
+  background: url("../img/search.jpg") no-repeat;
+  background-size: 0.525rem 0.575rem;
+}
+.head_box .search .search_box {
+  padding-top: 0.1rem;
+  height: 1.25rem;
+}
+.head_box .search .search_box .search_inp {
+  box-sizing: border-box;
+  float: left;
+  width: 12.05rem;
+  height: 1.25rem;
+  padding-left: 1.3rem;
+  background: #d5dba9;
+  font-size: 0.55rem;
+  color: #aaaaa8;
+  border-radius: 0.2rem;
+}
+.head_box .buy_cur {
+  float: left;
+  width: 2rem;
+  height: 1.875rem;
+  background: url("../img/buy_cur.jpg") no-repeat 0 0.25rem;
+  background-size: 2rem 1.425rem;
+}
+.main {
+  margin-top: 1.875rem;
+  width: 100%;
+}
+.main .list {
+  width: 100%;
+}
+.main .list a {
+  display: block;
+  width: 100%;
+}
+.main .list a img {
+  width: 100%;
+}
+.main .fix {
+  background: #cce3d1;
+  padding-top: 0.5rem;
+  width: 100%;
+  border-bottom: 1px solid #bbdac0;
+}
+.main .fix li {
+  float: left;
+  width: 3.2rem;
+}
+.main .fix li .fix_nav {
+  text-align: center;
+  display: block;
+  width: 100%;
+  font-size: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+.main .fix li .fix_nav .fix_img {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.main .fix li .fix_nav .title {
+  width: 100%;
+  height: 1.125rem;
+  line-height: 1.125rem;
+}
