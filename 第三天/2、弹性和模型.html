@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性和模型</title>
+    <style>
+        #box{
+            margin: 0;
+            padding: 0;
+            width: 600px;
+            height: 600px;
+            border: 3px solid pink;
+            display: flex;
+            /*flex-direction: row-reverse;*/
+            flex-direction:column-reverse ;
+        }
+        #box li{
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 1px solid #000;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--
+        全部设置在父级上的
+        1、首先认清楚两个概念  主轴和侧轴
+        2、 display:flex;是display：box；的进化版；
+            flex-direction 设置主轴方向 ---》默认主轴是row
+                    row x轴从左到右
+                    row revers x轴从右到左
+                    column y轴从上到下
+                    column revers y轴从下往上
+
+    -->
+<ul id="box">
+    <li>111</li>
+    <li>222</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+</ul>
+
+</body>
+</html>

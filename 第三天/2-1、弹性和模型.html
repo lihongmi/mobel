@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>弹性和模型</title>
+    <style>
+        #box{
+            margin: 0;
+            padding: 0;
+            width: 600px;
+            height: 600px;
+            border: 3px solid pink;
+            display: flex;
+            /*flex-direction:column-reverse ;*/
+            justify-content:space-around;
+        }
+        #box li{
+            list-style: none;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 1px solid #000;
+        }
+
+
+    </style>
+</head>
+<body>
+<!--
+    justify-content 主轴对齐方式；
+    1、 默认是flex-start 元素开始的位置，富裕空间占据另外一边；
+        flex-end  元素结束的位置，富裕空间占据另外一边
+        center元素居中，富裕空间均匀显示在元素的两侧类似于text-align：center；
+        space-between 富裕空间在元素之间平均分配
+        space-around  富裕空间在元素两侧平均分配
+-->
+<ul id="box">
+    <li>111</li>
+    <li>222</li>
+    <li>3</li>
+    <li>4</li>
+<!--    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>-->
+</ul>
+
+</body>
+</html>

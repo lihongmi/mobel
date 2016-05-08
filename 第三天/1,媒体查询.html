@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*
+				@media 媒体查询  all所有设备  screen 彩屏设备；
+				媒体特性：max-width  min-width
+						orientation: portrait  竖屏
+						orientation: landscape 横屏
+				关键字：not  and  only
+
+
+				//响应式布局的常规尺寸
+				@media all and (min-width:1200){
+					//大分辨率（pc分辨率、TV）
+				}
+				@media all and (max-width:1199;)and (min-width:850px){
+					//中等分辨率（pc分辨率、pad）
+				}
+				@media all and (max-width:849;)and (min-width:700px){
+					//
+					pad
+				}
+				@media all and (max-width:699;)and (min-width:480px){
+					//手机和平板
+				}
+				@media all and (max-width:479){
+					//手机
+				}
+
+
+			*/
+			#box{
+				width: 100px;
+				height: 100px;
+				text-align: center;
+				line-height: 100px;
+				background: red;
+			}
+			@media all and (orientation: landscape) and (max-width: 800px){
+				#box{
+					background: yellow;
+				}
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<!--
+			不同的设备
+			不同设备的尺寸
+		-->
+		<div id="box"></div>
+	</body>
+</html>
